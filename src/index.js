@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import SearchBar from './components/SearchBar';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class App extends React.Component {
+  handleTermChange(term) {
+    console.log(term);
+  }
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  render() {
+    return (
+      <div>
+        <SearchBar onTermChange={this.handleTermChange} />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('app'));
