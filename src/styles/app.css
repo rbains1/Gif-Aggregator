@@ -3,6 +3,10 @@
     width: 90%;
 }
 
+.navbar-brand, .nav-item {
+    font-size: 20px;
+}
+
 .fa-heart {
     color: #a94442;
     font-size: 14px;

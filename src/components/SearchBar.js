@@ -8,7 +8,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className="search">
-        <input placeholder="Enter text to search for memes!" onChange={event => this.onInputChange(event.target.value)} />
+        <input placeholder="Enter text to search for GIFs!" onChange={event => this.onInputChange(event.target.value)} />
       </div>
     );
   }
